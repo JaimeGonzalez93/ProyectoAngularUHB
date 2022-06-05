@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FilterPipe } from './pipes/filter.pipe';
 import { FilterComponent } from './components/filter/filter.component';
+import { PaginatePipe } from './pipes/paginate.pipe';
 
 
 
@@ -9,13 +10,15 @@ import { FilterComponent } from './components/filter/filter.component';
   declarations: [
     FilterPipe,
     FilterComponent,
+    PaginatePipe
   ],
   imports: [
     CommonModule
   ],
   exports:[
     FilterPipe,
-    FilterComponent
+    FilterComponent,
+    PaginatePipe
   ]
 })
 export class SharedModule { }

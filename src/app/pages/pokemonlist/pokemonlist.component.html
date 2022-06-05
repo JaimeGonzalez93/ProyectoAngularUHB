@@ -1,13 +1,16 @@
 <div class="pokemonList">
-  <div class="pokemonList__busqueda">
-  </div>
+  <div>
+  <input [(ngModel)]="filterValue">
+  <input type="number" [(ngModel)]="page">
+</div>
   <div class="grid">
     <div class="pokedex">
-      <div class="box" *ngFor="let pokemon of pokemon">
+      <div class="box" *ngFor="let pokemon of (pokemon | filter:filterValue | paginate:page)">
         <img [src]="pokemon.sprites.front_default" alt="pokemonSprite" />
         <h3>{{ pokemon.name }}</h3>
         <p><b>Type:</b>{{ pokemon.types[0].type.name }}</p>
       </div>
     </div>
   </div>
+  
 </div>

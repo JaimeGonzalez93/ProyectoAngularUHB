@@ -1,3 +1,4 @@
+import { SharedModule } from './../../shared/shared.module';
 import { FormsModule } from '@angular/forms';
 
 import { NgModule } from '@angular/core';
@@ -15,7 +16,8 @@ import { PokemonlistComponent } from './pokemonlist.component';
   imports: [
     CommonModule,
     PokemonlistRoutingModule,
-    FormsModule
+    FormsModule,
+    SharedModule
   ],
   exports:[
     PokemonlistComponent

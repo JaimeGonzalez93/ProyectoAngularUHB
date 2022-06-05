@@ -13,6 +13,7 @@ export class PokemonlistComponent implements OnInit {
   public filterValue: string = '';
   public pokemon: any[] = [];
   public name:string ='';
+  public page: number = 0;
 
 
   constructor(
