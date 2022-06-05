@@ -1,3 +1,5 @@
+import { FormsModule } from '@angular/forms';
+
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -7,11 +9,13 @@ import { PokemonlistComponent } from './pokemonlist.component';
 
 @NgModule({
   declarations: [
-    PokemonlistComponent
+    PokemonlistComponent,
+    
   ],
   imports: [
     CommonModule,
-    PokemonlistRoutingModule
+    PokemonlistRoutingModule,
+    FormsModule
   ],
   exports:[
     PokemonlistComponent
