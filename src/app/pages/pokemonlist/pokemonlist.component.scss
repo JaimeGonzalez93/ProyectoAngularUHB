@@ -1,6 +1,19 @@
+*{
+  background-color: rgb(17, 0, 255);
+  background-image: url(https://www.transparenttextures.com/patterns/nice-snow.png);
+}
+
 .pokemonList{
-  background-color: rgb(181, 225, 243);
   padding-top:200px;
+
+
+  input{
+    background-color: rgb(241, 241, 199);
+  }
+
+  __page{
+    size:30px;
+  }
 }
 .grid {
   padding: 50px;
@@ -10,17 +23,63 @@
   grid-gap: 16px;
   padding: 20px;
   grid-template-columns: repeat(auto-fit, minmax(23%, 1fr));
+  background-color: rgb(17, 0, 255);
+    background-image: url(https://www.transparenttextures.com/patterns/nice-snow.png);
+ 
 
   .box {
-    width: 100%;
+    width: 250px;
     height: 300px;
     box-shadow: 1px, 2px, 5px, rgba(0, 0, 0, 0.3);
     display: grid;
     text-align: center;
+    background-color: #979dac;
+    background-image: url(https://www.transparenttextures.com/patterns/gun-metal.png);
+    border-radius: 20%;
+    align-content: center;
+    margin:70px 0;
   }
   img {
     max-width: 100%;
     display: block;
     margin: 0 auto;
+    background-color:white;
+    background-image: url(https://www.transparenttextures.com/patterns/paper-1.png);
+    border-radius: 30%;
+    margin-bottom: 30px;
+  }
+  h3{
+    background-color: #979dac;
+    background-image: url(https://www.transparenttextures.com/patterns/gun-metal.png);
+  }
+  p{
+    background-color: #979dac;
+    background-image: url(https://www.transparenttextures.com/patterns/gun-metal.png);
+  }
+}
+
+.pokemonList__search{
+  display:flex;
+  justify-content: center;
+
+  input{
+    width:500px;
+    height: 40px;
+    font-size: 30px;
+    border: none;
+  }
+}
+
+.pokemonList__page{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-size:30px;
+
+  input{
+    margin:30px;
+    width:50px;
+    font-size: 20px;
+    height: 30px;
   }
 }

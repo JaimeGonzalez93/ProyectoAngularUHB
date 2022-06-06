@@ -23,7 +23,6 @@ export class RegisterComponent implements OnInit {
       name: [''],
       email: [''],
       password: [''],
-      emoji: ['']
     })
   }
 
